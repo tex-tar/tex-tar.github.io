@@ -9,7 +9,10 @@
 
   <!-- Google Font & Bulma CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?
+       family=Google+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700
+      &family=Noto+Sans:wght@300;500;700
+      &family=Castoro&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
 
   <!-- Icons -->
@@ -17,12 +20,18 @@
 
   <style>
     /* ——— base font / colours ——— */
-    html,body{font-family:"Inter",sans-serif;font-size:1.2rem;line-height:1.6}
+    html, body {
+      /* fallback order: Google Sans → Noto Sans → Castoro → serif */
+      font-family: 'Google Sans', 'Noto Sans', 'Castoro', serif;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
 
     /* hero gradient */
-    .hero.is-light-gradient{
-      background:radial-gradient(circle at 50% -10%,#f2f6ff 0%,#ffffff 70%)
+    .hero.is-light-gradient {
+      background: radial-gradient(circle at 50% -10%, #f2f6ff 0%, #ffffff 70%);
     }
+
 
     /* utilities */
     .btn-pill{border-radius:9999px}
