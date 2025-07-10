@@ -9,7 +9,10 @@
 
   <!-- Google Font & Bulma CSS -->
   <link rel="preconnect" href="https://fonts.gstatic.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?
+       family=Google+Sans:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700
+      &family=Noto+Sans:wght@300;500;700
+      &family=Castoro&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
 
   <!-- Icons -->
@@ -17,12 +20,18 @@
 
   <style>
     /* ——— base font / colours ——— */
-    html,body{font-family:"Inter",sans-serif;font-size:1.2rem;line-height:1.6}
+    html, body {
+      /* fallback order: Google Sans → Noto Sans → Castoro → serif */
+      font-family: 'Google Sans', 'Noto Sans', 'Castoro', serif;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
 
     /* hero gradient */
-    .hero.is-light-gradient{
-      background:radial-gradient(circle at 50% -10%,#f2f6ff 0%,#ffffff 70%)
+    .hero.is-light-gradient {
+      background: radial-gradient(circle at 50% -10%, #f2f6ff 0%, #ffffff 70%);
     }
+
 
     /* utilities */
     .btn-pill{border-radius:9999px}
@@ -73,7 +82,7 @@
         <a class="button is-info btn-pill" href="https://zenodo.org/record/YOUR_DOI" target="_blank">
           <span class="icon"><i class="fas fa-cloud-download-alt"></i></span><span>Zenodo</span>
         </a>
-        <a class="button is-dark btn-pill" href="https://github.com/tex-tar/tex-tar.github.io" target="_blank">
+        <a class="button is-dark btn-pill" href="https://github.com/tex-tar/tex-tar" target="_blank">
           <span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span>
         </a>
       </div>
@@ -301,7 +310,7 @@
   <div class="content has-text-centered">
     <p class="mb-2">
       <a href="#" class="icon is-medium mr-3"><i class="fas fa-file-pdf"></i></a>
-      <a href="https://github.com/tex-tar/tex-tar.github.io" class="icon is-medium"><i class="fab fa-github"></i></a>
+      <a href="https://github.com/tex-tar/tex-tar" class="icon is-medium"><i class="fab fa-github"></i></a>
     </p>
     <p class="is-size-7">
       © 2025 CVIT — adapted from the
