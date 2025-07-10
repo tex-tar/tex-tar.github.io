@@ -49,15 +49,6 @@
 </head>
 <body>
 
-<!-- ════════ Navbar ════════ -->
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://cvit.iiit.ac.in" title="CVIT"><i class="fas fa-home"></i></a>
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-    </a>
-  </div>
-</nav>
 
 <!-- ════════ Hero ════════ -->
 <section class="hero is-light-gradient pb-6">
@@ -79,8 +70,8 @@
         <a class="button is-dark btn-pill" disabled>
           <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Paper</span>
         </a>
-        <a class="button is-dark btn-pill" disabled>
-          <span class="icon"><i class="fas fa-file-pdf"></i></span><span>Supplementary</span>
+        <a class="button is-info btn-pill" href="https://zenodo.org/record/YOUR_DOI" target="_blank">
+          <span class="icon"><i class="fas fa-cloud-download-alt"></i></span><span>Zenodo</span>
         </a>
         <a class="button is-dark btn-pill" href="https://github.com/tex-tar/tex-tar.github.io" target="_blank">
           <span class="icon"><i class="fab fa-github"></i></span><span>GitHub</span>
@@ -92,7 +83,7 @@
 
 <!-- ════════ Abstract ════════ -->
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
     <h2 class="title is-3 has-text-centered section-heading">Abstract</h2>
     <div class="content">
       <p>
@@ -246,40 +237,56 @@
   </div>
 </section>
 
-<!-- ════════ Citation ════════ -->
 <section class="section pt-0">
-  <div class="container is-max-desktop">
+  <div class="container has-text-centered">
+    <h2 class="title is-3 has-text-centered section-heading">
+      Visualization of results for a subset of baselines and variants in comparison with TexTAR
+    </h2>
+    <figure
+      class="image shadow"
+      style="margin: 0 auto; max-width: 1200px;"
+    >
+      <img
+        src="figures/results-comparision.png"
+        alt="Comparison of Results"
+        style="width: 100%; height: auto;"
+      >
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <h3 class="title is-4 mb-3">Download the Dataset and Weights</h3>
+    <p>
+      Model weights and the MMTAD testset can be downloaded from the
+      <a href="https://zenodo.org/record/YOUR_DOI" target="_blank">link</a>.
+      To get access to the full dataset, please contact
+      <a href="mailto:ravi.kiran@iiit.ac.in">ravi.kiran@iiit.ac.in</a>.
+    </p>
+  </div>
+</section>
+
+<!-- ════════ Citation ════════ -->
+ 
+<section class="section pt-0">
+  <div class="container is-max-widescreen">
     <h3 class="title is-4 mb-3">Citation</h3>
-<pre class="box"><code>@article{Kumar2025TexTAR,
+    <pre class="box"><code>@article{Kumar2025TexTAR,
   title   = {TexTAR: Textual Attribute Recognition in Multi-domain and Multi-lingual Document Images},
   author  = {Rohan Kumar and Jyothi Swaroopa Jinka and Ravi Kiran Sarvadevabhatla},
-  journal = {arXiv},
+  booktitle = {International Conference on Document Analysis and Recognition, ICDAR},
   year    = {2025}
 }</code></pre>
   </div>
 </section>
-<!-- <section class="section pt-0">
 
-  <div class="container is-fluid">
-    <h3 class="title is-4 mb-3">Citation</h3>
+<!-- Acknowledgements & contact -->
 
-    
-    <pre class="box"
-         style="white-space:pre-wrap;word-break:break-word;margin-bottom:0;">
-<code>@article{Kumar2025TexTAR,
-  title   = {TexTAR: Textual Attribute Recognition in Multi-domain and Multi-lingual Document Images},
-  author  = {Rohan Kumar and Jyothi Swaroopa Jinka and Ravi Kiran Sarvadevabhatla},
-  journal = {arXiv},
-  year    = {2025}
-}</code></pre>
-  </div>
-</section> -->
-<!-- ════════ Acknowledgements & contact ════════ -->
 <section class="section pt-0">
-  <div class="container is-max-desktop">
+  <div class="container is-max-widescreen">
     <h3 class="title is-4 mb-3">Acknowledgements</h3>
     <p>International Institute of Information Technology Hyderabad, India.</p>
-
     <h3 class="title is-4 mt-5 mb-3">Contact</h3>
     <p>
       <a href="mailto:rohan.kumar@students.iiit.ac.in">rohan.kumar@students.iiit.ac.in</a><br>
